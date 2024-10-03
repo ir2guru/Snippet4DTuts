@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LocalStorage & SessionStorage Demo</h1>
+
+        <div class="storage-section">
+            <h2>LocalStorage</h2>
+            <label for="localInput">Enter something to store (persists across sessions):</label>
+            <input type="text" id="localInput" placeholder="Enter text here">
+            <button id="saveLocalBtn">Save to LocalStorage</button>
+            <ul id="localList">
+                <!-- List of stored items will go here -->
+            </ul>
+        </div>
+
+        <div class="storage-section">
+            <h2>SessionStorage</h2>
+            <label for="sessionInput">Enter something to store (removed on tab close):</label>
+            <input type="text" id="sessionInput" placeholder="Enter text here">
+            <button id="saveSessionBtn">Save to SessionStorage</button>
+            <ul id="sessionList">
+                <!-- List of stored items will go here -->
+            </ul>
+        </div>
+
+        <button id="clearStorageBtn">Clear All Storage</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
